@@ -28,7 +28,7 @@
     "electron-prebuilt": "^0.30.0",
     "object-assign": "^3.0.0",
     "tape": "^4.0.1",
-    "testron": "git://github.com/shama/testron.git#b0e8a8752cb5d839989498becbec255f4bf970c1"
+    "testron": "^1.1.0"
   },
   "dependencies": {
     "mutationobserver-shim": "^0.3.1"
