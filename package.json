@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/shama/resize-event#readme",
   "devDependencies": {
+    "browserify": "^11.0.0",
     "budo": "^4.1.0",
     "electron-prebuilt": "^0.30.0",
     "object-assign": "^3.0.0",
