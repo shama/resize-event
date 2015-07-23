@@ -1,0 +1,35 @@
+{
+  "name": "resize-event",
+  "version": "1.0.0",
+  "description": "Detect resize on an element without polling or iframes",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo example.js",
+    "test": "browserify test.js -o bundle.js && testron bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/shama/resize-event.git"
+  },
+  "keywords": [
+    "resize",
+    "event",
+    "element"
+  ],
+  "author": "Kyle Robinson Young <kyle@dontkry.com> (http://dontkry.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shama/resize-event/issues"
+  },
+  "homepage": "https://github.com/shama/resize-event#readme",
+  "devDependencies": {
+    "budo": "^4.1.0",
+    "electron-prebuilt": "^0.30.0",
+    "object-assign": "^3.0.0",
+    "tape": "^4.0.1",
+    "testron": "^1.0.0"
+  },
+  "dependencies": {
+    "mutationobserver-shim": "^0.3.1"
+  }
+}
