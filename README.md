@@ -5,7 +5,8 @@ Detect resize on an element without polling or iframes
 [![NPM version](https://badge.fury.io/js/resize-event.svg)](https://badge.fury.io/js/resize-event)
 
 This uses a [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver)
-to detect changes to the `style` attribute of an element.
+to detect changes to the `style` attribute of an element and then compares the
+width/height to check if it has changed.
 
 A polyfill is provided which will use polling on older browsers.
 
