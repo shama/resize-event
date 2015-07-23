@@ -14,6 +14,10 @@ module.exports = function (target, callback) {
       }
     }
   })
-  observer.observe(target, { attributes: true })
+  observer.observe(target, {
+    attributes: true,
+    childList: false,
+    characterData: false
+  })
   return observer
 }
