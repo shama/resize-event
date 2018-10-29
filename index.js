@@ -1,5 +1,5 @@
 require('mutationobserver-shim')
-module.exports = function (target, callback) {
+function onresize (target, callback) {
   function makeid (el) {
     return [target.style.width, target.style.height, target.clientWidth, target.clientHeight].join('')
   }
@@ -23,3 +23,5 @@ module.exports = function (target, callback) {
   })
   return observer
 }
+module.exports = onresize
+onresize.default = onresize
