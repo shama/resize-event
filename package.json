@@ -3,6 +3,7 @@
   "version": "1.1.0",
   "description": "Detect resize on an element without polling or iframes",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "start": "budo example.js",
     "test": "browserify test.js -o bundle.js && testron bundle.js"
