@@ -37,4 +37,5 @@ npm install resize-event --save
 Then use a CommonJS compatible module bundler to `require('resize-event')`.
 
 # license
-(c) 2015 Kyle Robinson Young. MIT License
+
+(c) 2018 Kyle Robinson Young. MIT License
