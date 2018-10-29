@@ -1,3 +1,3 @@
 declare module "resize-event" {
-  export function onresize(target: HTMLElement, callback: () => void);
+  export default function onresize(target: HTMLElement, callback: () => void);
 }
