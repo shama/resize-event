@@ -1,5 +1,18 @@
 require('mutationobserver-shim')
-function onresize (target, callback) {
+var win
+if (typeof window !== 'undefined') {
+  win = window
+} else if (typeof global !== 'undefined') {
+  win = global
+} else if (typeof self !== 'undefined') {
+  win = self
+} else {
+  win = {}
+}
+var onresize = ('ResizeObserver' in win) ? resizeObserverOnResize : mutationObserverOnResize
+module.exports = onresize
+onresize.default = onresize
+function mutationObserverOnResize (target, callback) {
   function makeid (el) {
     return [target.style.width, target.style.height, target.clientWidth, target.clientHeight].join('')
   }
@@ -23,5 +36,8 @@ function onresize (target, callback) {
   })
   return observer
 }
-module.exports = onresize
-onresize.default = onresize
+function resizeObserverOnResize (target, callback) {
+  var observer = new ResizeObserver(callback)
+  observer.observe(target)
+  return observer
+}
