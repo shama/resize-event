@@ -13,7 +13,7 @@ A polyfill is provided for `MutationObserver` which will then use polling on rea
 ## usage
 
 ```js
-import onresize from "resize-event"
+import onResize from "resize-event"
 
 // Create or select an element, must be in the DOM
 const element = document.createElement('div')
