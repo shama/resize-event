@@ -1,12 +1,12 @@
 {
   "name": "resize-event",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Detect resize on an element without polling or iframes",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
     "start": "budo example.js",
-    "test": "browserify test.js -o bundle.js && testron bundle.js"
+    "test": "budo test.js"
   },
   "repository": {
     "type": "git",
@@ -26,10 +26,8 @@
   "devDependencies": {
     "browserify": "^16.5.1",
     "budo": "^11.6.3",
-    "electron-prebuilt": "^1.4.13",
     "object-assign": "^4.1.1",
-    "tape": "^5.0.1",
-    "testron": "^1.1.0"
+    "tape": "^5.0.1"
   },
   "dependencies": {
     "mutationobserver-shim": "^0.3.5"
